@@ -25,7 +25,7 @@ class Airplane:
 
     def seatmap(self):
         print("\nSeat Map:")
-        print("    " + "   ".join(self.places)) 
+        print("    " + "   ".join(self.places))
         for row_num, row in enumerate(self.seats, start=1):
             row_display = " ".join("|X|" if seat.reserved else "|0|" for seat in row)
             print(f"{row_num:2} {row_display}")
@@ -80,6 +80,3 @@ while start:
             plane.cancel_reserve(row, col, passenger_name)
         else:
             print("Invalid seat letter! Try again.")
-
-
-
