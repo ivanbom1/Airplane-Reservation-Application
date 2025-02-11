@@ -25,10 +25,10 @@ class Airplane:
 
     def seatmap(self):
         print("\nSeat Map:")
-        print("    " + "   ".join(self.places))  # Column labels
+        print("    " + "   ".join(self.places)) 
         for row_num, row in enumerate(self.seats, start=1):
             row_display = " ".join("|X|" if seat.reserved else "|0|" for seat in row)
-            print(f"{row_num:2} {row_display}")  # Print row numbers
+            print(f"{row_num:2} {row_display}")
 
     def reserve(self, row, col, passenger_name):
         if self.seats[row][col].reservation_action(passenger_name):
