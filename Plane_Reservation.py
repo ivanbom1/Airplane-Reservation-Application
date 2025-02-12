@@ -48,11 +48,11 @@ plane = Airplane(32, 6)
 start = True
 while start:
 
-    print("\nThis is a plane seat reservation app!"
-        "\n Choose the operation you want to perform (1-3):"
+    print("\n Choose the operation you want to perform (1-3):"
         "\n(1) - Display plane seat map;"
         "\n(2) - Reserve a seat;"
         "\n(3) - Cancel reserved seat;")
+
 
     n = int(input("Enter operation number: "))
 
